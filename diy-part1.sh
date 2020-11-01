@@ -11,7 +11,16 @@
 #
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# luci-app-udp2raw
+git clone https://github.com/zhfreal/luci-app-udp2raw package/luci-app-udp2raw
+
+# luci-app-speederv2
+git clone https://github.com/zhfreal/luci-app-speederv2 package/luci-app-speederv2
+
+# luci-app-smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
