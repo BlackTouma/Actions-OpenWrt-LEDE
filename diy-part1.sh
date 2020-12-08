@@ -14,7 +14,10 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+#sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+
+# openwrt-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 
 # luci-app-udp2raw
 git clone https://github.com/zhfreal/luci-app-udp2raw package/luci-app-udp2raw
@@ -24,3 +27,4 @@ git clone https://github.com/zhfreal/luci-app-speederv2 package/luci-app-speeder
 
 # luci-app-smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+
