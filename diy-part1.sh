@@ -28,3 +28,6 @@ git clone https://github.com/zhfreal/luci-app-speederv2 package/luci-app-speeder
 # luci-app-smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 
+# luci-app-smartdns
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+
